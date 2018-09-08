@@ -35,7 +35,7 @@ Apr 24 10:02:23 inet chat[6761]: Failed
 Для сброса нужной шины USB нам потребуется скомпилировать бинарник. Чтобы не компилировать его каждый раз снова и пользоваться им на практически любой машине я буду компилировать его статически.
 
 ```
-$ wget https://gist.githubusercontent.com/x2q/5124616/raw -O usbreset.c
+$ wget https://raw.githubusercontent.com/alexshnup/usbreset/master/usbreset.c -O usbreset.c
 $ gcc -Wall -static -o usbreset usbreset.c
 $ sudo install -o root -g root -m 0755 usbreset /usr/local/sbin
 $ lsusb | grep Huawei
